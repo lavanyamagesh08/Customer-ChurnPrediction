@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deaf and Dumb Users</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../images/icon.jpg" type="image/jpeg">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('../images/signdetectorbg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: rgb(17, 13, 13);
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    #webcam-container {
+      margin: 20px auto;
+      width: 420px;
+      height: 320px;
+      border: 3px solid white;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    #label-container {
+      margin: 20px auto;
+      font-size: 22px;
+      padding: 10px;
+      width: 420px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    button:nth-of-type(1) {
+      background-color:  #007bff; 
+      color: white;
+    }
+
+    button:nth-of-type(2) {
+      background-color: #007bff; 
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Deaf and Dumb Users</h1>
+
+  <div id="webcam-container"></div>
+  <div id="label-container">Loading Model...</div>
+  <button onclick="submitQuery()">Submit</button>
+
+  <div>
+    <button onclick="window.location.href='../chatbot/chatbot.html'">Back to Chatbot</button>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

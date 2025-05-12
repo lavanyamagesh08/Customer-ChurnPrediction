@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ta"> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../images/icon.jpg" type="image/jpeg">
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .emoji-buttons button {
+      font-size: 2rem;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+    .mic-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #replyArea {
+      margin-top: 30px;
+    }
+    #replyGif {
+      width: 200px;
+      height: auto;
+      display: none; 
+    }
+    body {
+    background-image: url('images/bg.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh;
+    margin: 0; 
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+
+  .emoji-buttons button {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mic-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #replyArea {
+    margin-top: 30px;
+  }
+
+  #replyGif {
+    width: 200px;
+    height: auto;
+    display: none;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>உங்கள் கருத்தை தெரிவிக்கவும்</h1> 
+    
+   
+    <div class="emoji-buttons">
+      <button onclick="handleEmoji('happy')">😊</button>
+      <button onclick="handleEmoji('sad')">😢</button>
+      <button onclick="handleEmoji('angry')">😠</button>
+      <button onclick="handleEmoji('neutral')">🤔</button>
+    </div>
+    <button class="mic-btn" onclick="startListening()">🎤 குரல் மூலம் தெரிவிக்கவும்</button>
+    <div id="replyArea">
+      <p id="replyText"></p>
+      <img id="replyGif" src="" alt="Emotion GIF" />
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

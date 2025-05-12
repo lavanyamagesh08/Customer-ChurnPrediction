@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 2em;
+    background-color: #f5f5f5;
+  }
+  
+  video {
+    border: 2px solid #333;
+    width: 400px;
+    height: 300px;
+  }
+  
+  #label-container {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #222;
+    font-weight: bold;
+  }
+  
