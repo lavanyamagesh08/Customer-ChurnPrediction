@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('images/login.jpg'); /* Your background image path */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      background: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+      text-align: center;
+      color: white;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 250px;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .login-container button {
+      width: 270px;
+      padding: 10px;
+      background-color: #4322ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .login-container p {
+      margin-top: 15px;
+    }
+
+    .login-container a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Customer Login</h2>
+    <form action="login.php" method="POST">
+      <input type="hidden" name="role" value="customer">
+      <input type="text" name="username" placeholder="Username" required><br/>
+      <input type="password" name="password" placeholder="Password" required><br/>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="customer_signup.html">Sign Up</a></p>
+    </form>
+  </div>
+
+</body>
+</html>

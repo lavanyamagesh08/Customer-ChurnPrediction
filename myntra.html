@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <style>
+        
+        .section {
+            background-image: url('images/myntrabg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .center-content {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .difficulty-list {
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .difficulty-list li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 180px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        margin: 20px 0;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+        color: #4CAF50;
+    }
+    .section {
+        margin-left: 200px; 
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+    </nav>
+
+    <section class="section">
+        <div class="center-content">
+            <h2>Customer Issues with our Products</h2>
+
+            <p>Myntra, known for its vast collection of fashion and lifestyle products, has garnered attention from fashion enthusiasts. However, many customers have encountered challenges such as delayed deliveries, receiving damaged or wrong items, and difficulties with returns and exchanges. Issues like inaccurate product descriptions, size discrepancies, and limited stock availability often leave customers frustrated. Additionally, some users face payment failures, hidden charges, or complications with promo codes. While Myntra strives for convenience, these hurdles, coupled with customer service concerns, can lead to dissatisfaction and customer churn. By resolving these pain points, Myntra could elevate its reputation and retain loyal shoppers.</p>
+            <a href="myntrachurn.html">
+                <button>Your Churns are Welcome!!</button>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>

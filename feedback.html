@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #575757;
+        }
+        /* Section */
+        .section {
+            margin-left: 220px;
+            padding: 20px;
+            width: calc(100% - 220px);
+            background-image: url('images/feedback.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        /* Feedback Form */
+        .feedback-form {
+            max-width: 500px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .feedback-form h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+        }
+        /* Star Rating */
+        .star-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            gap: 5px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+        .star-rating label {
+            color: #ddd;
+            transition: color 0.2s;
+        }
+        .star-rating input[type="radio"]:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f5b301;
+        }
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="homes.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+    </nav>
+
+    <!-- Feedback Section -->
+    <section class="section">
+        <div class="feedback-form">
+            <h2>Customer Feedback</h2>
+            <form id="feedbackForm" action="feedback.php" method="POST">
+
+                <div class="form-group">
+                    <label>Are you satisfied with working on our platform?</label>
+                    <select name="platform_satisfaction" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Yes">Yes, I am satisfied</option>
+                        <option value="Somewhat">Somewhat, it meets some of my needs</option>
+                        <option value="No">No, there are areas needing improvement</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>What changes or improvements would you like to see?</label>
+                    <textarea name="improvements" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Rate your experience with our platform:</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" required><label for="star5">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

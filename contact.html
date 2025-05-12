@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images\icon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 200px);
+            height: 100vh;
+            margin-left: 200px;
+            background-image: url('images/contact.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        .center-content {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 600px;
+        }
+        .highlight-text {
+            font-size: 2rem;
+            color: #4400ff;
+            margin-bottom: 20px;
+        }
+        .contact-details {
+            color: #f0f3f3; 
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .social-media li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-media a {
+            color: #edebe5;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        .social-media a:hover {
+            color: #4CAF50;
+        }
+        .member-photo {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            .contact-section {
+                width: 100%;
+                margin-left: 0;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <a href="homes.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+    </nav>
+
+    <section class="contact-section">
+        <div class="center-content">
+            <h1 class="highlight-text">Whisper Your Wishes to the Magic Realm!!</h1>
+
+            <div class="info-box">
+                <img src="images/member.jpeg" alt="Member 1" class="member-photo" style="width: 100px; height: auto;">
+                <div class="contact-details">
+                    <p><strong>Name:</strong> Lavanya Magesh</p>
+                    <p><strong>Email:</strong> lavanyam9626@gmail.com</p>
+                    <p><strong>Phone:</strong> 6379954214</p>
+                    <p><strong>Address:</strong> Perambalur</p>
+                </div>
+                <div class="social-media">
+                    <h2 style="color:#ffcc00;">Follow Us</h2>
+                    <ul>
+                        <li><a href="https://github.com/lavanyamagesh08" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/lavanya-magesh-74103b301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

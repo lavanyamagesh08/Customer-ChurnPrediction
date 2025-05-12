@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select User Type</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+  <style>
+    /* Inside style.css or here for demo */
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .selection-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      margin-top: 80px;
+      flex-wrap: wrap;
+      background: transparent;
+    }
+
+    .btn-wrapper {
+      text-align: center;
+    }
+
+    .custom-button {
+      width: 350px;
+      height: 250px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background-color: #898787;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+
+    .custom-button:hover {
+      transform: scale(1.08);
+    }
+
+    .button-img {
+      width: 120px; /* control small image size */
+      height: 120px;
+      border-radius: 50%;
+    }
+
+    .btn-label {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #ede9e9;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="selection-body">
+  <div class="selection-container">
+
+    <!-- Customer Box -->
+    <div class="btn-wrapper">
+      <button class="custom-button" onclick="window.location.href='customer_login.html'">
+        <img src="images/user.jpg" alt="Customer" class="button-img">
+      </button>
+      <div class="btn-label">Customer</div>
+    </div>
+
+    <!-- Employee Box -->
+    <div class="btn-wrapper">
+      <button class="custom-button" onclick="window.location.href='employee_login.html'">
+        <img src="images/employee.jpg" alt="Employee" class="button-img">
+      </button>
+      <div class="btn-label">Employee</div>
+    </div>
+
+  </div>
+</body>
+</html>

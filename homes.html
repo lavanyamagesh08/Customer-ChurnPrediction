@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 220px;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #575757;
+        }
+
+        .section {
+            margin-left: 220px;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center-content {
+            text-align: center;
+        }
+
+        .center-button {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .center-button:hover {
+            transform: scale(1.1);
+        }
+
+        .button-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="homes.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+        <a href="chatbot/chatbot.html" class="nav-link">Chatbot (Deaf & Dumb)</a>
+        <a href="bot/bot.html" class="nav-link">உங்கள் கருத்தைப் பகிரவும்</a>
+    </nav>
+
+    <!-- Section with Background -->
+    <section class="section" style="background-image: url('images/home.jpg');">
+        <div class="center-content">
+            <button class="center-button" onclick="window.location.href='homenext.html'">
+                <img src="images/icon.jpg" alt="Button Icon" class="button-image" />
+            </button>
+        </div>
+    </section>
+
+</body>
+</html>

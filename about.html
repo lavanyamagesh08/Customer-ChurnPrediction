@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 20px 0;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #4CAF50;
+        }
+        .section {
+            background-image: url('images/about.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-left: 200px;
+        }
+        .about-content {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 700px;
+            color: rgb(243, 235, 235);
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight:bold;
+            color:#FFA500;
+            
+        }
+
+        .about-content p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="homes.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+    </nav>
+    <section class="section">
+        <div class="about-content">
+            <h2>"Your Voice Matters!"</h2>
+            <p>We believe every customer has a story to tell.</p>
+            <p>Through our churn echo platform, you have the power to share your insights, inspire improvements, and drive change.</p> 
+            <p>Your voice is essential to us, guiding our journey to build experiences that resonate and keep customers coming back.</p> 
+            <p>Together, we’re shaping a future where your feedback becomes our inspiration.</p>
+        </div>
+    </section>
+
+</body>
+</html>

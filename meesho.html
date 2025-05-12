@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho Customer Experiences</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <style>
+        
+        .section {
+            background-image: url('images/meeshobg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .center-content {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 180px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        margin: 20px 0;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+        color: #4CAF50;
+    }
+    .section {
+        margin-left: 200px; 
+    }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="sidebar">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+    </nav>
+
+    <section class="section">
+        <div class="center-content">
+            <h1 class="section-title">Customer Challenges with our Products</h1>
+            <p>Meesho customers often encounter a variety of challenges that can impact their shopping experience. 
+                Delayed shipments, damaged goods, and difficulty with returns are among the most common complaints, leaving many frustrated. 
+                Issues with product quality, size mismatches, and out-of-stock items frequently arise, making it hard for customers to find exactly what they need.</p>
+            <p>The app’s navigation can be tricky, and users often face payment failures, with some even experiencing double charges. 
+                Additionally, customers are often left wondering about order tracking and shipping times or frustrated by unexpected delivery charges.</p>
+            <a href="meeshochurn.html">
+                <button>Your Churns are Welcome!!</button>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
